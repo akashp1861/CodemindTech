@@ -15,16 +15,7 @@ public class LinkedHashMapImpl {
 
 	public static void main(String[] args) {
 		
-		TreeMap<Integer, String> tMap = new TreeMap<>(Collections.reverseOrder());
 		
-		tMap.put(1, "Ak");
-		tMap.put(2, "mp");
-		tMap.put(3, "Sp");
-		tMap.put(4, "Kp");
-		
-		//Set<Map.Entry<Integer, String>> s1 = tMap.entrySet();
-		
-		System.out.println("reverse order" + tMap);
 		
 
 		
