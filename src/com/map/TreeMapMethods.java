@@ -1,7 +1,11 @@
 package com.map;
 
 import java.util.Comparator;
+import java.util.Iterator;
+import java.util.NavigableMap;
+import java.util.NavigableSet;
 import java.util.TreeMap;
+import java.util.Map.Entry;
 
 public class TreeMapMethods {
 
@@ -48,7 +52,22 @@ public class TreeMapMethods {
 		System.out.println("ceilingEntry() :" + tMap.ceilingEntry(502)); //op: 502=Mumbai
 		System.out.println("ceilingEntry() :" + tMap.ceilingEntry(888)); //op: null 
 		
-		//floorEntry() : 
-		System.out.println(tMap.floorEntry());
+		/*floorEntry() : Returns a key-value mapping associated with the greatest key less than or equal to the given key,
+		                 or null if there is no such key.*/
+		System.out.println("floorEntry() :"+ tMap.floorEntry(846)); // op:845=Kolhapur 
+		System.out.println("floorEntry() :"+ tMap.floorEntry(845)); // op:845=Kolhapur 
+		System.out.println("floorEntry() :"+ tMap.floorEntry(210)); // op:null
+		
+		//System.out.println(tMap.descendingKeySet());
+		System.out.println("Iterate the key in descending order : ");
+		NavigableSet<Integer> navigableSet= tMap.descendingKeySet();
+		
+		 Iterator<Integer> iterator = navigableSet.iterator();
+		 while(iterator.hasNext()) {
+			 Integer entry = iterator.next();
+			 System.out.println(entry);
+		 }
+		 
+		
 	}
 }
