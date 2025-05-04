@@ -19,7 +19,7 @@ public class ProgramsMap {
 			if (!(LMap.containsKey(str.charAt(i)))) {
 				LMap.put(str.charAt(i), 1);
 			} else {
-				LMap.put(str.charAt(i), LMap.get(str.charAt(i) + 1));
+				LMap.put(str.charAt(i), LMap.get(str.charAt(i))+1);
 			}
 		}
 

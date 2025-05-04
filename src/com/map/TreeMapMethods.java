@@ -58,15 +58,8 @@ public class TreeMapMethods {
 		System.out.println("floorEntry() :"+ tMap.floorEntry(845)); // op:845=Kolhapur 
 		System.out.println("floorEntry() :"+ tMap.floorEntry(210)); // op:null
 		
-		//System.out.println(tMap.descendingKeySet());
-		System.out.println("Iterate the key in descending order : ");
-		NavigableSet<Integer> navigableSet= tMap.descendingKeySet();
 		
-		 Iterator<Integer> iterator = navigableSet.iterator();
-		 while(iterator.hasNext()) {
-			 Integer entry = iterator.next();
-			 System.out.println(entry);
-		 }
+		System.out.println("tailMap() : "+ tMap.tailMap(451)); //op: {451=Jalna, 502=Mumbai, 845=Kolhapur}
 		 
 		
 	}
